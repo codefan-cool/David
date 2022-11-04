@@ -27,10 +27,11 @@
 
   <body>
     <div>
-      <div class="home-header">
+      <div id="home_header" class="home-header">
+        <div id="sky_header" class="sky-header"></div>
         <div id="home-header-adver" class="home-header-adver">11 years experience</div>
         <a href="index.html">
-          <div class="home-logo">
+          <div id="home-logo" class="home-logo">
               <img src="assets/img/avatar.jpg" style="margin-left: 6px; margin-top: -20px;border-radius: 50%; z-index: 3;" width="150" height="150"/>
               <div id="arc-wrapper" class="arc-wrapper" >
                 <h4>David Johnson</h4>
@@ -67,10 +68,11 @@
             <div>Portfolio</div>
           </div>
         </div>
-        <div class="u-navbar"></div>
+        <div id="mynavbar" class="u-navbar"></div>
         <!-- <div class="header-title">Full stack web & blockchain developer</div> -->
       </div>
-      <div class="home-main">
+      <div id="home_main" class="home-main">
+        <div id="wave_container" class="wave-container"></div>
         <div class="lights">
           <div class='light x1'></div>
           <div class='light x2'></div>
@@ -99,8 +101,8 @@
           <div></div>
           <div></div>
         </div>
-        <div class="u-content" >
-          <div class="category-content" id="profile">
+        <div id="u_content" class="u-content" >
+          <div id="category_content" class="category-content" id="profile">
             <div class="content-cardcontainer">
               <div class="card-title">Summary</div>
               <div class="card-item">
@@ -226,6 +228,63 @@
       //   }
       // });
     </script>
+
+    <!-- 3D background -->
+    <script src="assets/js/three.r134.min.js"></script>
+    <script src="assets/js/vanta.birds.min.js"></script>
+    <script src="assets/js/vanta.waves.min.js"></script>
+    <script src="assets/js/vanta.clouds.min.js"></script>
+    <!-- <script src="assets/js/p5.min.js"></script>
+    <script src="assets/js/vanta.trunk.min.js"></script> -->
+    <script>
+      VANTA.BIRDS({
+        el: "#home_main",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundAlpha: 0.00
+      })
+      VANTA.CLOUDS({
+        el: "#sky_header",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        // scale: 1.00,
+        // texturePath: "./gallery/noise.png"
+      })
+      VANTA.WAVES({
+        el: "#wave_container",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 250.00,
+        minWidth: 250.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        shininess: 69.00,
+        waveHeight: 10.00,
+        waveSpeed: 0.65,
+        // zoom: 0.1
+      })                                
+      // VANTA.TRUNK({
+      //   el: "#u_content",
+      //   mouseControls: true,
+      //   touchControls: true,
+      //   gyroControls: false,
+      //   minHeight: 200.00,
+      //   minWidth: 200.00,
+      //   scale: 1.00,
+      //   scaleMobile: 1.00,
+      //   chaos: 10.00,
+      //   backgroundColor: 0x1488CC
+      // })
+      </script>
   </body>
 
   </html>
