@@ -27,50 +27,44 @@
 
   <body>
     <div>
-      <div class="home-header">
+      <div id="home_header" class="home-header">
+        <div id="sky_header" class="sky-header"></div>
         <div id="home-header-adver" class="home-header-adver">11 years experience</div>
         <a href="index.html">
-          <div class="home-logo">
-              <img src="assets/img/avatar.jpg" style="margin-left: 6px; margin-top: -20px;border-radius: 50%; z-index: 3;" width="150" height="150"/>
+          <div id="home-logo" class="home-logo">
+              <img src="assets/img/avatar.png" style="margin-left: 6px; margin-top: -20px;border-radius: 50%; z-index: 3;" width="150" height="150"/>
               <div id="arc-wrapper" class="arc-wrapper" >
                 <h4>David Johnson</h4>
               </div>
           </div>
         </a>
         <div class="icon-list">
-          <div class="text-icon">
+          <div class="text-icon" onClick="onChangePage(this, 'u_summary_content')">
              <i class="icon icon-active fa fa-user" aria-hidden="true"></i>
             <div>Summary</div>
           </div>          
-          <div class="text-icon">
-            <a href="career.html">
+          <div class="text-icon" onClick="onChangePage(this, 'u_career_content')">
               <i class="icon fa fa-book" aria-hidden="true"></i>
-            </a>
             <div>Career</div>
           </div>
-          <div class="text-icon">
-            <a href="skills.html">
+          <div class="text-icon" onClick="onChangePage(this, 'u_skills_content')">
               <i class="icon fa fa-star" aria-hidden="true"></i>
-            </a>
             <div>Skills</div>
           </div>
-          <div class="text-icon">
-            <a href="experience.html">
+          <div class="text-icon" onClick="onChangePage(this, 'u_experience_content')">
               <i class="icon fa fa-flag"></i>
-            </a>
             <div>Experience</div>
           </div>
-          <div class="text-icon">
-            <a href="portfolio.html">
+          <div class="text-icon" onClick="onChangePage(this, 'u_portfolio_content')">
               <i class="icon fa fa-image" aria-hidden="true"></i>
-            </a>
             <div>Portfolio</div>
           </div>
         </div>
-        <div class="u-navbar"></div>
+        <div id="mynavbar" class="u-navbar"></div>
         <!-- <div class="header-title">Full stack web & blockchain developer</div> -->
       </div>
-      <div class="home-main">
+      <div id="home_main" class="home-main">
+        <div id="wave_container" class="wave-container"></div>
         <div class="lights">
           <div class='light x1'></div>
           <div class='light x2'></div>
@@ -99,8 +93,8 @@
           <div></div>
           <div></div>
         </div>
-        <div class="u-content" >
-          <div class="category-content" id="profile">
+        <div id="u_summary_content" class="u-content" >
+          <div id="category_content" class="category-content" id="profile">
             <div class="content-cardcontainer">
               <div class="card-title">Summary</div>
               <div class="card-item">
@@ -160,6 +154,522 @@
             </div>
           </div>
         </div>
+
+
+        <!-- Skills page -->
+        <div id="u_skills_content" class="u-content"  >
+          <div class="category-content" id="profile">
+            <div class="content-cardcontainer">
+              <div class="card-title">Skills</div>
+              <div class="card-item">
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Languages</div>
+                    <div class="career-description u-margintop-0">HTML, HTML5, CSS, CSS3, SCSS, JavaScript, ECMAScript (ES6), TypeScript, PHP, Python, Golang, GraphQL, Java, C#</div>
+                  </div>
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Frameworks</div>                
+                    <div class="career-description u-margintop-0">JQery, Bootstrap, Tailwind, MUI (Material UI),Laravel, Codeigniter, Angular, Next.js, Nuxt.js, Spring boot, Cypress.io, Django REST Framework, Flask, Redux, Express.js,  Vuetify, FeathersJS, React Native, Boost, NestJS, Gorilla</div>
+                  </div>
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Libraries/APIs</div>                
+                    <div class="career-description u-margintop-0">Antd, REST APIs, Flask-RESTful, React, Node.js, Redux-Saga, ApexCharts.js, Vue, Highcharts, AmplifyJS, Vue 2, Redux Form, Reselect, RxJS, Three.js</div>
+                  </div>
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Tools</div>                
+                    <div class="career-description u-margintop-0">MongoDB Atlas, Mongoose, Celery, Redux Thunk, SendGrid, Webpack, VS Code, Atom, IntelliJ IDEA</div>
+                  </div>
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Platforms</div>                
+                    <div class="career-description u-margintop-0">Android, Amazon Web Services (AWS), Firebase, Amazon EC2 (Amazon Elastic Compute Cloud), Microsoft Azure, Twilio, Google Cloud Platform (GCP), Docker, AWS Lambda, Blockchain, MacOS, Mapbox, Ethereum</div>
+                  </div>
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Storage</div>                
+                    <div class="career-description u-margintop-0">NoSQL, MySQL, PostgreSQL, Cloud Firestore, MongoDB, Elasticsearch</div>
+                  </div>
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Other</div>                
+                    <div class="career-description u-margintop-0">TypeORM, Hooks, AWS, Ajax, Material Design, Firebase Cloud Functions, Front-end, Blockchain Development, Apollo, Semantic UI, Microsoft Azure, Linux Administration, Progressive Web Applications (PWA), Windows 10</div>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Profile page -->
+        <div id="u_profile_content" class="u-content"  >
+          <div class="category-content" id="profile">
+            <div class="content-cardcontainer">
+              <div class="card-title">Summary</div>
+              <div class="card-item">
+                With eight years of professional software development experience, I have delivered robust and scalable software for millions of online shoppers and developed several easy-to-use web applications for standups and internal systems for enterprises.
+                Using the Laravel framework and a custom-built CMS on top of it, he's developed complex, robust systems like online ticket sales applications and webshops.
+                I can't wait to participate across the entire development lifecycle with a spark of creativity and expertise in front-end development. 
+                My preferred front-end technology is React, while on the back-end I have experience with Node and Spring Framework.
+                <div class="summary-skillbox">
+                  <span class="small-text-box">HTML</span>
+                  <span class="small-text-box">Javascript</span>
+                  <span class="small-text-box">CSS</span>
+                  <span class="small-text-box">SCSS</span>
+                  <span class="small-text-box">JQuery</span>
+                  <span class="small-text-box">Bootstrap</span>
+                  <span class="small-text-box">Tailwind</span>
+                  <span class="small-text-box">Angular</span>
+                  <span class="small-text-box">React</span>
+                  <span class="small-text-box">Vue</span>
+                  <span class="small-text-box">Node</span>
+                  <span class="small-text-box">JSP</span>
+                  <span class="small-text-box">Java</span>
+                  <span class="small-text-box">Spring</span>
+                  <span class="small-text-box">Spring Boot</span>
+                  <span class="small-text-box">PHP</span>
+                  <span class="small-text-box">Laravel</span>
+                  <span class="small-text-box">Codeigniter</span>
+                  <span class="small-text-box">NextJs</span>
+                  <span class="small-text-box">NuxtJs</span>
+                  <span class="small-text-box">MEAN stack</span>
+                  <span class="small-text-box">MERN stack</span>
+                  <span class="small-text-box">MEVN stack</span>
+                  <span class="small-text-box">SQL</span>
+                  <span class="small-text-box">Mongo</span>
+                  <span class="small-text-box">Blockchain</span>
+                  <span class="small-text-box">Solidity</span>
+                  <span class="small-text-box">Solana</span>
+                  <span class="small-text-box">Web3</span>
+                  <span class="small-text-box">Hardhat</span>
+                </div>
+              </div>
+            </div>
+            <div class="content-cardcontainer">
+              <div class="card-title">Employment</div>
+              <div class="card-item">
+                <div class="career-item">
+                    <div class="career-titlemark"></div>
+                    <div class="career-title">Senior React Developer</div>
+                    <div class="career-titleinfo"><span style="margin-right: 30px">Neighborhoods.com LLC</span><span>2020 - 2021</span></div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Worked on the real-estate website with React, Redux, SCSS, Webpack.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Interpreted the Invision design into mobile-first responsive front-end UI.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Developed a universal search feature for a customer-facing analytics application that allowed all of the application's data entities to be searched instantly within a single interface.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Optimized React UI with lazy-loading and modern browser APIs.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Delivered new features and the storybook build component with optimization.</div>
+                    <div class="career-description">Technologies: UX, UI, Web App UX, Web UI, PostgreSQL, App UI, HTML5, Webpack, Less, CSS, HTML, Backbone.js, Node.js, Web Design, Responsive UI, Web UX, Responsive Web Design (RWD), React, Redux, Redux Thunk, SCSS, JavaScript, Webpack, CSS</div>
+                  </div>
+                  <div class="career-item">
+                    <!-- margin-left: -25px; margin-right: 20px; border-radius:50%; background:rgba(255,255,255,0.8); width:10px; height: 10px; -->
+                    <div class="career-titlemark"></div>
+                    <div class="career-title">Senior Full-stack Developer</div>
+                    <div class="career-titleinfo"><span style="margin-right: 30px">Care Of</span><span>2020 - 2020</span></div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Developed a Quora-like site using React, React Hooks front end with GraphQL for a home-care service company based in Australia.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Implemented mobile-responsive front-end pages with React, Bootstrap, and SCSS.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>DUsed Apollo-boost to consume GraphQL API. </div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Engaged back-end development in Nest.js and PostgreSQL.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Integrated third-party APIs like Sendgrid. </div>
+                    <div class="career-description">Technologies: GraphQL, PostgreSQL, SendGrid, Node.js, SCSS, Bootstrap, NestJS, Boost, Apollo, React</div>
+                  </div>
+                  <div class="career-item">
+                    <!-- margin-left: -25px; margin-right: 20px; border-radius:50%; background:rgba(255,255,255,0.8); width:10px; height: 10px; -->
+                    <div class="career-titlemark"></div>
+                    <div class="career-title">Full-stack JavaScript Expert</div>
+                    <div class="career-titleinfo"><span style="margin-right: 30px">Roubler Pte Ltd</span><span>2019 - 2019</span></div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Developed USA’s leading cloud-based workforce management, HR, and payroll software with Angular, Node.js, Express.js, GraphQL, Apollo, PostgreSQL, Bootstrap, and more.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Worked closely with web development and software design team for production, modification, and maintenance of web applications.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Developed and unit-tested software that meets business requirements and technical design. Maintained code coverage quality for all new components built close to 90% with an emphasis on TDD.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Built great-looking software with technologies like Bootstrap to the dynamic back end in Socket.IO.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Troubleshot pre- and post-production implementations.</div>
+                    <div class="career-description">Technologies: React Native, AWS Lambda, RxJS, Bootstrap, PostgreSQL, Apollo, GraphQL, Express.js, Node.js, Angular</div>
+                  </div>
+                  <div class="career-item">
+                    <!-- margin-left: -25px; margin-right: 20px; border-radius:50%; background:rgba(255,255,255,0.8); width:10px; height: 10px; -->
+                    <div class="career-titlemark"></div>
+                    <div class="career-title">React, Node.js Developer</div>
+                    <div class="career-titleinfo"><span style="margin-right: 30px">TRM Labs</span><span>2019 - 2019</span></div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Joined the team as a React and Node.js developer with cryptocurrency experience.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Implemented React High-Order-Components along with Antd.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Implemented REST APIs with FeathersJS. </div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Wrote Blockchain-related helper functions. </div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Used Enzyme, Jest, and Chai for the test and Lerna for packaging resources. </div>
+                    <div class="career-description">Technologies: Blockchain, MongoDB, Docker, Antd, FeathersJS, Node.js, Reselect, Redux-Saga, React</div>
+                  </div>
+                  <div class="career-item">
+                    <!-- margin-left: -25px; margin-right: 20px; border-radius:50%; background:rgba(255,255,255,0.8); width:10px; height: 10px; -->
+                    <div class="career-titlemark"></div>
+                    <div class="career-title">Remote Full-stack Developer</div>
+                    <div class="career-titleinfo"><span style="margin-right: 30px">Exygy</span><span>2019 - 2019</span></div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Developed Boston hospitals' medication provider search project using Django and React.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Implemented front-end pages using React and Redux Form.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Implemented REST APIs using Django REST framework and optimized Django ORM queries.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Fixed mobile responsive issue on server-side rendering in Next.js using JavaScript packages such as Lodash.throttle.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Integrated Django-packages like TinyMCE editor and customize Django admin behavior.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Fixed Django specific issues, maintained and upgraded Django packages.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Fixed cross-browser issues for the front-end including Chrome, IE, Firefox, and Safari.</div>
+                    <div class="career-description">Technologies: Django REST Framework, Django, Next.js, Mapbox, Redux Form, React</div>
+                  </div>
+                  <div class="career-item">
+                    <!-- margin-left: -25px; margin-right: 20px; border-radius:50%; background:rgba(255,255,255,0.8); width:10px; height: 10px; -->
+                    <div class="career-titlemark"></div>
+                    <div class="career-title">Full-stack Developer</div>
+                    <div class="career-titleinfo"><span style="margin-right: 30px">Aurum</span><span>2018 - 2018</span></div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Worked on Aurum's hotel inventory management web application with Angular. As the only developer, I had managed the design, development, and deployment of the project.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Implemented a real-time messaging system and custom calendar feature and other business logic using Firebase.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Implemented a notification system using Firebase Cloud messaging.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Added cloud functions with Node.js as back-end API management for handling database.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Integrated Django-packages like TinyMCE editor and customize Django admin behavior.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Implemented business logic and built responsive front-end pages with Bootstrap.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Deployed the project using Firebase hosting service with a custom user domain from GoDaddy.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div></div>
+                    <div class="career-description">Technologies: Firebase, React, Angular</div>
+                  </div>
+                  <div class="career-item">
+                    <!-- margin-left: -25px; margin-right: 20px; border-radius:50%; background:rgba(255,255,255,0.8); width:10px; height: 10px; -->
+                    <div class="career-titlemark"></div>
+                    <div class="career-title">Full-stack Developer</div>
+                    <div class="career-titleinfo"><span style="margin-right: 30px">Percepticon</span><span>2014 - 2018</span></div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Contributed to multiple projects with React, Angular, Django, and AWS.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Built single-page applications with React (Redux-saga), AngularJS, and Angular.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Built React High-Order-Component to implement complement behavior and refactored JavaScript code.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Implemented optimized algorithms with the proper data structure to optimize rendering 3D models and its custom behavior in Node.js on a React project.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Implemented features and fixed issues in React-Redux-Form such as mobile-view rendering issue.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Worked on a Node and Redux-persist project with a lot of third-party APIs like Dropbox API and Google sheet API.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Worked on data visualization with HighCharts. </div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Wrote REST APIs with Django REST framework and Django server-side template with many other libraries like Djoser and django-allauth.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Deployed and managed a live development and production server. For instance, deployed a Django application in Ubuntu 16.04 machine with PostgreSQL and other tools and libraries like Celery, Elasticsearch, and Open Semantic Search.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Wrote a deployment script with NodeJS and bash shell script.</div>
+                    <div class="career-description">Technologies: Amazon Web Services (AWS), Firebase, AWS, Django, Node.js, Angular, React</div>
+                  </div>
+                  <div class="career-item">
+                    <!-- margin-left: -25px; margin-right: 20px; border-radius:50%; background:rgba(255,255,255,0.8); width:10px; height: 10px; -->
+                    <div class="career-titlemark"></div>
+                    <div class="career-title">Frontend Developer</div>
+                    <div class="career-titleinfo"><span style="margin-right: 30px">Altitude Labs</span><span>2012 - 2014</span></div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Figma design to HTML pages with JavaScript and CSS.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Create serveral background and text effects with CSS and JQuery.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Built front-end pages with Bootstrap, JavaScript, HTML, and CSS.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Rebuilt the Wordpress template front-end application in HTML, JQuery, and Bootstrap.</div>
+                    
+                    <div class="career-description">Technologies: HTML, CSS, Javascript, JQuery, SCSS, Bootstrap, Tailwind</div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="content-cardcontainer">
+              <div class="card-title">Experience</div>
+              <div class="card-item">
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Centinel<span style="margin-left: 10px; "><a href="https://centinel.tmweb.dev/" target="_blank">https://centinel.tmweb.dev/</a></span></div>
+                    <div class="career-description">Centinel is an automated service for backing up your applications' databases and reading and parsing error logs. Out of the box, it integrates with Laravel 4.2+, Lumen, and WordPress applications via plugins that I created, but it's possible to create a connection plugin for virtually any app with internet access.</div>
+                  </div>
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Agroproteinka<span style="margin-left: 10px; "><a href="https://www.agroproteinka.hr/en" target="_blank">https://www.agroproteinka.hr/en</a></span></div>                
+                    <div class="career-description">Implementing the new, fully responsive redesign of Agroproteinka website was challenging. I used standard HTML/CSS for the majority of the content display, while some more complex, dynamic parts like the news section and the history timeline utilize Vue.js. The back end was built on the Laravel PHP framework and customized Ion CMS.</div>
+                  </div>
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">BNB | Bed and Breakfast<span style="margin-left: 10px; "><a href="https://bnb.tmweb.dev/" target="_blank">https://bnb.tmweb.dev/</a></span></div>
+                    <div class="career-description">Originally developed for a popular bed and breakfast studio in Zagreb, now serving only presentational purposes, BnB is a site where you could easily book a room for your stay in Zagreb and read about local activities and places to visit. It was built in the Laravel framework and a custom CMS, and I leveraged the MyRent API for room booking.
+                    </div>
+                  </div>
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">BNB | Bed and Breakfast<span style="margin-left: 10px; "><a href="https://bnb.tmweb.dev/" target="_blank">https://bnb.tmweb.dev/</a></span></div>
+                    <div class="career-description">Originally developed for a popular bed and breakfast studio in Zagreb, now serving only presentational purposes, BnB is a site where you could easily book a room for your stay in Zagreb and read about local activities and places to visit. It was built in the Laravel framework and a custom CMS, and I leveraged the MyRent API for room booking.
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="content-cardcontainer">
+              <div class="card-title">Skills</div>
+              <div class="card-item">
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Languages</div>
+                    <div class="career-description u-margintop-0">Python, HTML, CSS4, CSS, JavaScript, Python 3, ECMAScript (ES6), TypeScript, GraphQL, HTML5, Java, C#, SCSS</div>
+                  </div>
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Frameworks</div>                
+                    <div class="career-description u-margintop-0">Cypress.io, Django REST Framework, Flask, Redux, Django, Angular, Express.js, MUI (Material UI), Vuetify, FeathersJS, Bootstrap, Next.js, React Native, Boost, NestJS</div>
+                  </div>
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Libraries/APIs</div>                
+                    <div class="career-description u-margintop-0">Antd, REST APIs, Flask-RESTful, React, Node.js, Redux-Saga, ApexCharts.js, Vue, Highcharts, AmplifyJS, Vue 2, Redux Form, Reselect, RxJS, Three.js</div>
+                  </div>
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Tools</div>                
+                    <div class="career-description u-margintop-0">MongoDB Atlas, Mongoose, Celery, Redux Thunk, SendGrid, Webpack, VS Code, Atom, IntelliJ IDEA</div>
+                  </div>
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Platforms</div>                
+                    <div class="career-description u-margintop-0">Android, Amazon Web Services (AWS), Firebase, Amazon EC2 (Amazon Elastic Compute Cloud), Twilio, Google Cloud Platform (GCP), Docker, AWS Lambda, Blockchain, MacOS, Mapbox, Ethereum</div>
+                  </div>
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Storage</div>                
+                    <div class="career-description u-margintop-0">NoSQL, MySQL, PostgreSQL, Cloud Firestore, MongoDB, Elasticsearch</div>
+                  </div>
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Other</div>                
+                    <div class="career-description u-margintop-0">TypeORM, Hooks, AWS, Ajax, Material Design, Firebase Cloud Functions, Front-end, Blockchain Development, Apollo, Semantic UI, Microsoft Azure, Linux Administration, Progressive Web Applications (PWA), Windows 10</div>
+                  </div>
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Paradigms</div>                
+                    <div class="career-description u-margintop-0">DevOps</div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="content-cardcontainer">
+              <div class="card-title">Education</div>
+              <div class="card-item">
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Bachelor's Degree in Computer Science</div>
+                    <div class="career-description  u-margintop-0">Kharkiv State Auto-Road College</div>
+                  </div>
+              </div>
+            </div>                   
+          </div>
+        </div>
+
+
+
+        <!-- Portfilio page -->
+        <div id="u_portfolio_content" class="u-content"  >
+          <div id="portfolio">
+            <div class="content-cardcontainer">
+              <div class="card-title">My projects</div>
+              <div class="card-item portfolio-item">
+                  <div class="portfolio-card" title="https://bnb.tmweb.dev/" style="background:url('assets/img/Laravel-bnb.png') no-repeat left top; background-size: cover"
+                  onclick="window.open('https://bnb.tmweb.dev/')">
+                    <div class="portfolio-card-label">Hotel site ( Laravel, Bootstrap )</div>
+                    <div class="portfolio-giticon" title="https://github.com/Cool-DJ" onclick="window.open('https://github.com/Cool-DJ')"><i class="icon fa fa-github-alt fa-2x" aria-hidden="true"></i></div>
+                  </div>
+                  <div class="portfolio-card" title="https://sloto.netlify.app/wheel" style="background:url('assets/img/blockchain-slotwheels.png') no-repeat left top; background-size: cover"
+                  onclick="window.open('https://sloto.netlify.app/wheel')">
+                    <div class="portfolio-card-label">NFT betting game ( Solidity, Web3.js )</div>
+                    <div class="portfolio-giticon" title="https://github.com/Cool-DJ" onclick="window.open('https://github.com/Cool-DJ')"><i class="icon fa fa-github-alt fa-2x" aria-hidden="true"></i></div>
+                  </div>
+                  <div class="portfolio-card" title="https://ceremonycoffee.com" style="background:url('assets/img/wordpress-coffee.png') no-repeat left top; background-size: cover"
+                      onclick="window.open('https://ceremonycoffee.com')">
+                        <div class="portfolio-card-label">E-commerce ( Wordpress, Shopify, MySQL )</div>
+                        <div class="portfolio-giticon" title="https://github.com/Cool-DJ" onclick="window.open('https://github.com/Cool-DJ')"><i class="icon fa fa-github-alt fa-2x" aria-hidden="true"></i></div>
+                  </div>
+                  <div class="portfolio-card"  title="https://new.pinper.com/" style="background:url('assets/img/wordpress-pinnacle.png') no-repeat left top; background-size: cover" onclick="window.open('https://new.pinper.com/')">
+                        <div class="portfolio-card-label">E-commerce ( Wordpress, MySQL )</div>
+                        <div class="portfolio-giticon" title="https://github.com/Cool-DJ" onclick="window.open('https://github.com/Cool-DJ')"><i class="icon fa fa-github-alt fa-2x" aria-hidden="true"></i></div>
+                  </div>
+                  <div class="portfolio-card"  title="http://www.kindly.ai" style="background:url('assets/img/wordpress-kindlysite.png') no-repeat left top; background-size: cover" onclick="window.open('http://www.kindly.ai')">
+                        <div class="portfolio-card-label">Experience building ( React.js, Next.js, Node )</div>
+                        <div class="portfolio-giticon" title="https://github.com/Cool-DJ" onclick="window.open('https://github.com/Cool-DJ')"><i class="icon fa fa-github-alt fa-2x" aria-hidden="true"></i></div>
+                  </div>
+                <div class="portfolio-card"  title="http://www.dmu.edu" style="background:url('assets/img/wordpress-university.png') no-repeat left top; background-size: cover"  onclick="window.open('http://www.dmu.edu')">
+                      <div class="portfolio-card-label">University site ( Wordpress, MySQL )</div>
+                      <div class="portfolio-giticon" title="https://github.com/Cool-DJ" onclick="window.open('https://github.com/Cool-DJ')"><i class="icon fa fa-github-alt fa-2x" aria-hidden="true"></i></div>
+                </div>
+                <div class="portfolio-card"  title="http://www.lifehousehotels.com" style="background:url('assets/img/wordpress-hotel.png') no-repeat left top; background-size: cover"  onclick="window.open('http://www.lifehousehotels.com')">
+                        <div class="portfolio-card-label">Hotel company site ( MERN stack )</div>
+                        <div class="portfolio-giticon" title="https://github.com/Cool-DJ"  onclick="window.open('https://github.com/Cool-DJ')"><i class="icon fa fa-github-alt fa-2x" aria-hidden="true"></i></div>
+                </div>
+                <div class="portfolio-card" title="https://www.hawaiiorchids.net/" style="background:url('assets/img/webflow-flowershop.png') no-repeat left top; background-size: cover"
+                      onclick="window.open('https://www.hawaiiorchids.net/')">
+                        <div class="portfolio-card-label">Orchids service ( Webflow )</div> 
+                        <div class="portfolio-giticon" title="https://github.com/Cool-DJ" onclick="window.open('https://github.com/Cool-DJ')"><i class="icon fa fa-github-alt fa-2x" aria-hidden="true"></i></div>
+                  </div>
+                  <div class="portfolio-card"  title="https://www.hellobonsai.com/" style="background:url('assets/img/webflow-bonsai.png') no-repeat left top; background-size: cover" onclick="window.open('https://www.hellobonsai.com/')">
+                        <div class="portfolio-card-label">Invoicing service ( Webflow )</div>
+                        <div class="portfolio-giticon" title="https://github.com/Cool-DJ" onclick="window.open('https://github.com/Cool-DJ')"><i class="icon fa fa-github-alt fa-2x" aria-hidden="true"></i></div>
+                  </div>
+                <div class="portfolio-card"  title="https://lattice.com/" style="background:url('assets/img/webflow-lattice.png') no-repeat left top; background-size: cover"  onclick="window.open('https://lattice.com/')">
+                        <div class="portfolio-card-label">People Success Platform ( Webflow )</div>
+                        <div class="portfolio-giticon" title="https://github.com/Cool-DJ"  onclick="window.open('https://github.com/Cool-DJ')"><i class="icon fa fa-github-alt fa-2x" aria-hidden="true"></i></div>
+                </div>
+
+                <div class="portfolio-card" title="" style="background:url('assets/img/figma-to-html.png') no-repeat left top; background-size: cover"
+                      onclick="">
+                        <div class="portfolio-card-label">Bank service (Pure HTML, CSS, JQuery)</div>
+                        <div class="portfolio-giticon" title="https://github.com/Cool-DJ/figma-to-html" onclick="window.open('https://github.com/Cool-DJ/figma-to-html')"><i class="icon fa fa-github-alt fa-2x" aria-hidden="true"></i></div>
+                  </div>
+                  <div class="portfolio-card"  title="https://www.hellobonsai.com/" style="background:url('assets/img/apex-modification.png') no-repeat left top; background-size: cover" onclick="window.open('')">
+                        <div class="portfolio-card-label">Node module modification ( apexcharts.js )</div>
+                        <div class="portfolio-giticon" title="https://github.com/Cool-DJ/apex-modified" onclick="window.open('https://github.com/Cool-DJ/apex-modified')"><i class="icon fa fa-github-alt fa-2x" aria-hidden="true"></i></div>
+                  </div>
+                <div class="portfolio-card"  title="https://pixexid.com/" style="background:url('assets/img/react-pixeid.png') no-repeat left top; background-size: cover"  onclick="window.open('https://pixexid.com/')">
+                      <div class="portfolio-card-label">Image service ( React, Next.js, Tailwind )</div>
+                      <div class="portfolio-giticon" title="https://github.com/Cool-DJ" onclick="window.open('https://github.com/Cool-DJ')"><i class="icon fa fa-github-alt fa-2x" aria-hidden="true"></i></div>
+                </div>
+                <div class="portfolio-card"  title="https://www.thecustommovement.com/" style="background:url('assets/img/react-custommovement.png') no-repeat left top; background-size: cover"  onclick="window.open('https://www.thecustommovement.com/')">
+                        <div class="portfolio-card-label">E-commerce ( React, Next.js, Node, Express )</div>
+                        <div class="portfolio-giticon" title="https://github.com/Cool-DJ"  onclick="window.open('https://github.com/Cool-DJ')"><i class="icon fa fa-github-alt fa-2x" aria-hidden="true"></i></div>
+                </div>
+                <div class="portfolio-card"  title="https://angleplatform.com/" style="background:url('assets/img/rales-angleplatform.png') no-repeat left top; background-size: cover"  onclick="window.open('https://angleplatform.com/')">
+                        <div class="portfolio-card-label">Photoshot booking ( Ruby on Rails, Strip )</div>
+                        <div class="portfolio-giticon" title="https://github.com/Cool-DJ"  onclick="window.open('https://github.com/Cool-DJ')"><i class="icon fa fa-github-alt fa-2x" aria-hidden="true"></i></div>
+                </div>
+                <div class="portfolio-card"  title="https://www.thefreshmarket.com/" style="background:url('assets/img/MEAN-freshmarket.png') no-repeat left top; background-size: cover"  onclick="window.open('https://www.thefreshmarket.com/')">
+                        <div class="portfolio-card-label">E-commerce ( MEAN stack )</div>
+                        <div class="portfolio-giticon" title="https://github.com/Cool-DJ"  onclick="window.open('https://github.com/Cool-DJ')"><i class="icon fa fa-github-alt fa-2x" aria-hidden="true"></i></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- Experience page -->
+        <div id="u_experience_content" class="u-content"  >
+          <div class="category-content" id="profile">
+            <div class="content-cardcontainer">
+              <div class="card-title">Experience</div>
+              <div class="card-item">
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Centinel<span style="margin-left: 10px; "><a href="https://centinel.tmweb.dev/" target="_blank">https://centinel.tmweb.dev/</a></span></div>
+                    <div class="career-description">Centinel is an automated service for backing up your applications' databases and reading and parsing error logs. Out of the box, it integrates with Laravel 4.2+, Lumen, and WordPress applications via plugins that I created, but it's possible to create a connection plugin for virtually any app with internet access.</div>
+                  </div>
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Agroproteinka<span style="margin-left: 10px; "><a href="https://www.agroproteinka.hr/en" target="_blank">https://www.agroproteinka.hr/en</a></span></div>                
+                    <div class="career-description">Implementing the new, fully responsive redesign of Agroproteinka website was challenging. I used standard HTML/CSS for the majority of the content display, while some more complex, dynamic parts like the news section and the history timeline utilize Vue.js. The back end was built on the Laravel PHP framework and customized Ion CMS.</div>
+                  </div>
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">BNB | Bed and Breakfast<span style="margin-left: 10px; "><a href="https://bnb.tmweb.dev/" target="_blank">https://bnb.tmweb.dev/</a></span></div>
+                    <div class="career-description">Originally developed for a popular bed and breakfast studio in Zagreb, now serving only presentational purposes, BnB is a site where you could easily book a room for your stay in Zagreb and read about local activities and places to visit. It was built in the Laravel framework and a custom CMS, and I leveraged the MyRent API for room booking.
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Career page -->
+        <div id="u_career_content" class="u-content" >
+          <div class="category-content" id="profile">
+            <div class="content-cardcontainer">
+              <div class="card-title">Employment</div>
+              <div class="card-item">
+                <div class="career-item">
+                    <div class="career-titlemark"></div>
+                    <div class="career-title">Senior React Developer</div>
+                    <div class="career-titleinfo"><span style="margin-right: 30px">Remote Freelancer</span><span>2019 - 2022</span></div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Worked on the real-estate website with React, Redux, SCSS, Webpack.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Interpreted the Invision design into mobile-first responsive front-end UI.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Developed a universal search feature for a customer-facing analytics application that allowed all of the application's data entities to be searched instantly within a single interface.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Optimized React UI with lazy-loading and modern browser APIs.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Delivered new features and the storybook build component with optimization.</div>
+                    <div class="career-description">Technologies: UX, UI, Web App UX, Web UI, PostgreSQL, App UI, HTML5, Webpack, Less, CSS, HTML, Backbone.js, Node.js, Web Design, Responsive UI, Web UX, Responsive Web Design (RWD), React, Redux, Redux Thunk, SCSS, JavaScript, Webpack, CSS</div>
+                  </div>
+                  <div class="career-item">
+                    <!-- margin-left: -25px; margin-right: 20px; border-radius:50%; background:rgba(255,255,255,0.8); width:10px; height: 10px; -->
+                    <div class="career-titlemark"></div>
+                    <div class="career-title">Senior Full-stack Developer</div>
+                    <div class="career-titleinfo"><span style="margin-right: 30px">Resolute Software</span><span>2018 - 2019</span></div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Developed a Quora-like site using React, React Hooks front end with GraphQL for a home-care service company based in Australia.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Implemented mobile-responsive front-end pages with React, Bootstrap, and SCSS.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>DUsed Apollo-boost to consume GraphQL API. </div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Engaged back-end development in Nest.js and PostgreSQL.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Integrated third-party APIs like Sendgrid. </div>
+                    <div class="career-description">Technologies: GraphQL, PostgreSQL, SendGrid, Node.js, SCSS, Bootstrap, NestJS, Boost, Apollo, React</div>
+                  </div>
+                  <div class="career-item">
+                    <!-- margin-left: -25px; margin-right: 20px; border-radius:50%; background:rgba(255,255,255,0.8); width:10px; height: 10px; -->
+                    <div class="career-titlemark"></div>
+                    <div class="career-title">Full-stack JavaScript Expert</div>
+                    <div class="career-titleinfo"><span style="margin-right: 30px">Margasoft Corp</span><span>2018 - 2018</span></div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Developed USA’s leading cloud-based workforce management, HR, and payroll software with Angular, Node.js, Express.js, GraphQL, Apollo, PostgreSQL, Bootstrap, and more.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Worked closely with web development and software design team for production, modification, and maintenance of web applications.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Developed and unit-tested software that meets business requirements and technical design. Maintained code coverage quality for all new components built close to 90% with an emphasis on TDD.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Built great-looking software with technologies like Bootstrap to the dynamic back end in Socket.IO.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Troubleshot pre- and post-production implementations.</div>
+                    <div class="career-description">Technologies: React Native, AWS Lambda, RxJS, Bootstrap, PostgreSQL, Apollo, GraphQL, Express.js, Node.js, Angular</div>
+                  </div>
+                  <div class="career-item">
+                    <!-- margin-left: -25px; margin-right: 20px; border-radius:50%; background:rgba(255,255,255,0.8); width:10px; height: 10px; -->
+                    <div class="career-titlemark"></div>
+                    <div class="career-title">React, Node.js Developer</div>
+                    <div class="career-titleinfo"><span style="margin-right: 30px">gHost Services LLC</span><span>2017 - 2017</span></div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Joined the team as a React and Node.js developer with cryptocurrency experience.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Implemented React High-Order-Components along with Antd.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Implemented REST APIs with FeathersJS. </div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Wrote Blockchain-related helper functions. </div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Used Enzyme, Jest, and Chai for the test and Lerna for packaging resources. </div>
+                    <div class="career-description">Technologies: Blockchain, MongoDB, Docker, Antd, FeathersJS, Node.js, Reselect, Redux-Saga, React</div>
+                  </div>
+                  <div class="career-item">
+                    <!-- margin-left: -25px; margin-right: 20px; border-radius:50%; background:rgba(255,255,255,0.8); width:10px; height: 10px; -->
+                    <div class="career-titlemark"></div>
+                    <div class="career-title">Remote Full-stack Developer</div>
+                    <div class="career-titleinfo"><span style="margin-right: 30px">NetAngelS</span><span>2016 - 2017</span></div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Developed Boston hospitals' medication provider search project using Django and React.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Implemented front-end pages using React and Redux Form.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Implemented REST APIs using Django REST framework and optimized Django ORM queries.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Fixed mobile responsive issue on server-side rendering in Next.js using JavaScript packages such as Lodash.throttle.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Integrated Django-packages like TinyMCE editor and customize Django admin behavior.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Fixed Django specific issues, maintained and upgraded Django packages.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Fixed cross-browser issues for the front-end including Chrome, IE, Firefox, and Safari.</div>
+                    <div class="career-description">Technologies: Django REST Framework, Django, Next.js, Mapbox, Redux Form, React</div>
+                  </div>
+                  <div class="career-item">
+                    <!-- margin-left: -25px; margin-right: 20px; border-radius:50%; background:rgba(255,255,255,0.8); width:10px; height: 10px; -->
+                    <div class="career-titlemark"></div>
+                    <div class="career-title">Full-stack Developer</div>
+                    <div class="career-titleinfo"><span style="margin-right: 30px">HEXENS </span><span>2015 - 2016</span></div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Worked on Aurum's hotel inventory management web application with Angular. As the only developer, I had managed the design, development, and deployment of the project.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Implemented a real-time messaging system and custom calendar feature and other business logic using Firebase.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Implemented a notification system using Firebase Cloud messaging.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Added cloud functions with Node.js as back-end API management for handling database.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Integrated Django-packages like TinyMCE editor and customize Django admin behavior.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Implemented business logic and built responsive front-end pages with Bootstrap.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Deployed the project using Firebase hosting service with a custom user domain from GoDaddy.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Integrated various clients' code—to ensure code quality—into our system using aspect-oriented programming</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Orchestrate and resolved compilation issues of various clients' projects.</div>
+                    <div class="career-description">Technologies: Firebase, React, Angular, Java, Spring, Spring boot, IntelliJ IDEA</div>
+                  </div>
+                  <div class="career-item">
+                    <!-- margin-left: -25px; margin-right: 20px; border-radius:50%; background:rgba(255,255,255,0.8); width:10px; height: 10px; -->
+                    <div class="career-titlemark"></div>
+                    <div class="career-title">Full-stack Developer</div>
+                    <div class="career-titleinfo"><span style="margin-right: 30px">Initlab </span><span>2014 - 2015</span></div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Contributed to multiple projects with React, Angular, Django, and AWS.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Built single-page applications with React (Redux-saga), AngularJS, and Angular.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Built React High-Order-Component to implement complement behavior and refactored JavaScript code.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Implemented optimized algorithms with the proper data structure to optimize rendering 3D models and its custom behavior in Node.js on a React project.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Implemented features and fixed issues in React-Redux-Form such as mobile-view rendering issue.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Worked on a Node and Redux-persist project with a lot of third-party APIs like Dropbox API and Google sheet API.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Worked on data visualization with HighCharts. </div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Wrote REST APIs with Django REST framework and Django server-side template with many other libraries like Djoser and django-allauth.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Deployed and managed a live development and production server. For instance, deployed a Django application in Ubuntu 16.04 machine with PostgreSQL and other tools and libraries like Celery, Elasticsearch, and Open Semantic Search.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Wrote a deployment script with NodeJS and bash shell script.</div>
+                    <div class="career-description">Technologies: Amazon Web Services (AWS), Firebase, AWS, Django, Node.js, Angular, React</div>
+                  </div>
+                  <div class="career-item">
+                    <!-- margin-left: -25px; margin-right: 20px; border-radius:50%; background:rgba(255,255,255,0.8); width:10px; height: 10px; -->
+                    <div class="career-titlemark"></div>
+                    <div class="career-title">Frontend Developer</div>
+                    <div class="career-titleinfo"><span style="margin-right: 30px">Smart Production LLC</span><span>2011 - 2014</span></div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Figma design to HTML pages with JavaScript and CSS.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Create serveral background and text effects with CSS and JQuery.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Built front-end pages with Bootstrap, JavaScript, HTML, and CSS.</div>
+                    <div class="career-subitem"><div style="margin-right: 30px;">&diams;</div>Rebuilt the Wordpress template front-end application in HTML, JQuery, and Bootstrap.</div>
+                    
+                    <div class="career-description">Technologies: HTML, CSS, Javascript, JQuery, SCSS, Bootstrap, Tailwind</div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="content-cardcontainer">
+              <div class="card-title">Education</div>
+              <div class="card-item">
+                <div class="career-item padding-x-0" style="border: none">
+                  <div class="career-title">Bachelor's Degree in Electrical and Computer Technology Engineering</div>
+                  <div class="career-description  u-margintop-0">Yerevan State University - Lviv, Ukraine ( 2003 - 2007)</div>
+                </div>
+                  <div class="career-item padding-x-0" style="border: none">
+                    <div class="career-title">Master's Degree in Computer Science</div>
+                    <div class="career-description  u-margintop-0">University of Patras - Patras, Greece (2007 - 2010)</div>
+                  </div>
+                </div>
+            </div>                   
+          </div>
+        </div>
+
+
+
+
+
       </div>      
     </div>
 
@@ -171,7 +681,7 @@
     <script type="text/javascript" src="assets/js/google-jsapi.js"></script>
     <script>
       var $name		= $('#arc-wrapper').find('h4');
-      var $texticon = $('.text-icon').find('div');
+      // var $texticon = $('.text-icon').find('div');
       var $titles = $('.card-title');
 
       google.load('webfont','1');
@@ -192,8 +702,8 @@
         $name.show().arctext({radius: 105, dir: -1});
         // $texticon.show().arctext({radius: 70, dir: -1,});
         $titles.show().arctext({radius: 305});
-
-
+        $(".u-content").hide();
+        $("#u_summary_content").show();
       };
       var adverString = [
         "11+ years experience",
@@ -205,6 +715,34 @@
         "back-end developer",
         "30+ lanagues and frameworks",
         "7 years of education",
+        "Experience in 8+ companies",
+        "CTO and Teamleader for 5+ years",
+        "50+ best reviews",
+        "Bachelor's Degree in Computer Science",
+        "7 years of education",
+        "Online education system",
+        "Inteligent medical system",
+        "E-commerce websites",
+        "Figma to HTML",
+        "School management system",
+        "Node module modification",
+        "Smart contract building",
+        "NTF minting game",
+        "Blockchain betting",
+        "Fantastic design",
+        "High quality",
+        "Clear code",
+        "Easy maintainance",
+        "Cool service after launching",
+        "High qualified code",
+        "Responsive and smooth",
+        "50+ best reviews",
+        "Cross platfrom application",
+        "Safe and optimized running",
+        "Easily understandable code",
+        "10+ languages",
+        "30+ libraries and frameworks",
+        "20+ tools and IDEs",
        ]
       var curTextIndex = 0;
       var divAdverEle = document.getElementById("home-header-adver");
@@ -225,7 +763,61 @@
           // $('#summary').fadeIn();
       //   }
       // });
+      function onChangePage(curButEle, newPageId) {
+        $(".u-content").hide();
+        $("#"+newPageId).show();
+        // update icon
+        // $(this).find("i").addClass("icon-active");
+        $(".icon-active").removeClass("icon-active");
+        curButEle.firstElementChild.classList.add("icon-active");
+        // init();
+      }
     </script>
+
+    <!-- 3D background -->
+    <script src="assets/js/three.r134.min.js"></script>
+    <script src="assets/js/vanta.birds.min.js"></script>
+    <script src="assets/js/vanta.waves.min.js"></script>
+    <script src="assets/js/vanta.clouds.min.js"></script>
+
+    <script>
+      VANTA.BIRDS({
+        el: "#home_main",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundAlpha: 0.00
+      })
+      VANTA.CLOUDS({
+        el: "#sky_header",
+        // mouseControls: true,
+        // touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        // scale: 1.00,
+        // texturePath: "./gallery/noise.png"
+      })
+      // VANTA.WAVES({
+      //   el: "#wave_container",
+      //   mouseControls: true,
+      //   touchControls: true,
+      //   gyroControls: false,
+      //   minHeight: 250.00,
+      //   minWidth: 250.00,
+      //   scale: 1.00,
+      //   scaleMobile: 1.00,
+      //   shininess: 69.00,
+      //   waveHeight: 10.00,
+      //   waveSpeed: 0.65,
+      //   // zoom: 0.1
+      // })                                
+
+      </script>
   </body>
 
   </html>

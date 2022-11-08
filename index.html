@@ -26,10 +26,11 @@
   </head>
 
   <body>
-    <div class="welcome-main">
+    <div id="welcome_container" class="welcome-container"></div>
+    <div class="welcome-main" id="welcome_main">
       <div id="particles-js">
         <div class="welcome-header">
-          <img class="welcome-photo" src="assets/img/avatar.jpg"/>
+          <img class="welcome-photo" src="assets/img/avatar.png"/>
           <h1>
             <span class="site-title">David Johnson</span>
             <span class="site-description">Programmer • Web Developer • Blockchain expert</span>
@@ -64,6 +65,25 @@
     <!-- Import JS: Particles Theme -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="./assets/js/index.js"></script>
+
+    <script src="assets/js/p5.min.js"></script>
+    <script src="assets/js/vanta.trunk.min.js"></script>
+    <script>
+    VANTA.TRUNK({
+      el: "#welcome_container",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      backgroundColor: 0,
+      color: 0xffffff,
+      spacing: 15.00,
+      chaos: 5.00
+    })
+    </script>
 
   </body>
 </html>

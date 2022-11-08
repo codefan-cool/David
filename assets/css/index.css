@@ -32,6 +32,12 @@ body {
          background: linear-gradient(to right, #2B32B2, #1488CC);
   }
   
+.welcome-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.03;
+}
 
 .welcome-main {
     /* position: absolute; */
@@ -54,9 +60,9 @@ body {
     /* background: linear-gradient(to right, #2B32B2, #1488CC); */
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+    /* background: -webkit-linear-gradient(to right, #2B32B2, #1488CC); */
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2B32B2, #1488CC);
+    /* background: linear-gradient(to right, #2B32B2, #1488CC); */
     display: flex; 
     flex-direction: column;
     /* justify-content: center; */
@@ -338,6 +344,14 @@ body {
      text-shadow: 0px 0px 10px rgba(2, 12, 44, 0.5);
      z-index: 300;
 }
+.sky-header {
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    margin-top: -18px;
+    z-index: -1;
+    opacity: 0.3;
+}
 .home-header {
     position: fixed;
     width: 100%;
@@ -354,6 +368,7 @@ body {
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
+    /* background-color: black; */
     /* animation: fadein 5s; */
   }
   .home-header-adver {
@@ -814,6 +829,18 @@ body {
   
   }
 
+.wave-container {
+    position: absolute;
+    width: 100%;
+    /* top: 183px;
+    height: calc(100vh - 183px); */
+    bottom: 0;
+    height: 250px;
+    /* opacity: 0.5; */
+    -webkit-mask-image: linear-gradient(rgb(23, 88, 141, 0), rgb(23, 88, 141, 1));
+    mask-image: linear-gradient(rgb(23, 88, 141, 0), rgb(23, 88, 141, 1));
+}
+
 .u-content {
     position: relative;
     margin-top: 185px;
@@ -1008,6 +1035,13 @@ body {
     animation: navtextwarning 1s infinite;
 }
 
+.sea-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+    opacity: 0.3;
+}
 
 /*=============================================================================================
      Responsible definition                                 
